@@ -8,14 +8,38 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
-    <h1>Scopri se la tua parola è palindroma</h1>
 
-    <input type="text" id="getParola">
+    <div>
+       <h1>Scopri se la tua parola è palindroma</h1>
 
-    <button id="pulsantePalindroma">Premi</button>
+       <input type="text" id="getParola">
 
-    <p id="risultatoPalindroma"></p>
+       <button id="pulsantePalindroma">Premi</button>
+
+       <p id="risultatoPalindroma"></p>
+    </div>
+
+    <div>
+        <h1>Gioco del pari e dispari</h1>
+
+        <select name="numero" id="numero">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <select name="scelta pari o dispari" id="paridispari">
+            <option value="pari">pari</option>
+            <option value="dispari">dispari</option>
+        </select>
+
+        <button id="pulsantePariDispari">Premi</button>
+
+        <p id="risultatoPariDispari"></p>
+    </div>
+
 
     <script type="text/javascript" src="JS/main.js"></script>
     <script type="text/javascript" src="JS/sections/palidroma.js"></script>
