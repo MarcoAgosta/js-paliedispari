@@ -1,12 +1,13 @@
-const parolaPalindroma = document.getElementById("getParola")
-const risultatoPalindroma = document.getElementById("risultatoPalindroma")
-const pulsantePalindroma = document.getElementById("pulsantePalindroma")
-
+const risultatoPalindroma = document.getElementById("risultatoPalindroma");
+const pulsantePalindroma = document.getElementById("pulsantePalindroma");
 
 pulsantePalindroma.addEventListener ( "click", function() {
 
-    const testPalindroma = palindroma (parolaPalindroma)
-    
+    const parolaPalindroma = document.getElementById("getParola").value;
+    const testPalindroma = palindroma (parolaPalindroma);
+
+    console.log(testPalindroma)
+
     if (testPalindroma){
 
         risultatoPalindroma.innerHTML = `La parola è palindroma!`

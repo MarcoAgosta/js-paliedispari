@@ -1,26 +1,34 @@
 /** La funzione serve ad ottenere un risultato True se la parola è palindroma altrimenti ritorna false.
- * @param parola Stringa
+ * @param parola 
  */
 function palindroma( parola ){
 
-    const lunghezzaParola = parola.length
-    const lettereParola = parola.split("")
-    const lettereInvertite = []
+    const lunghezzaParola = parola.length;
+    const lettereParola = parola.split("");
+    const lettereInvertite = [];
 
-    for (let i = lunghezzaParola-1; i >= 0; i++){
+    for (let i = lunghezzaParola-1; i >= 0; i--){
 
-        lettereInvertite.push(lettereParola[i])
-
-    }
-
-    if (lettereParola === lettereInvertite) {
-
-        return true
-
-    } else {
-
-        return false
+        lettereInvertite.push(lettereParola[i]);
 
     }
+    
+    let a = 0
+
+    while (a < lunghezzaParola){
+
+        if (lettereParola[a] === lettereInvertite[a]){
+
+            a++
+
+        } else {
+
+            return false
+
+        }
+        
+    }
+
+    return true
 
 }
